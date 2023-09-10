@@ -1,3 +1,20 @@
+# Docker镜像
+完全基于releases的2.0官方压缩包，没有做任何修改。
+
+docker hub地址：[woodchen/lxmusicsyncserver:v2.0.0](https://hub.docker.com/r/woodchen/lxmusicsyncserver)
+```bash
+#2.0.0版本
+docker pull woodchen/lxmusicsyncserver:v2.0.0
+
+#1.3.3版本
+docker pull woodchen/lxmusicsyncserver:1.3.3
+```
+
+![image](https://github.com/lyswhut/lx-music-sync-server/assets/95951386/824273bc-a208-4e29-a4d4-1b702d8a085a)
+![](https://user-images.githubusercontent.com/95951386/266782454-2631ecc6-f7ba-4059-9d4b-0a57ef711382.png)
+
+
+
 # LX Msuic Sync Server
 
 洛雪音乐数据同步服务端，本项目目前用于收藏列表数据同步，类似原来PC端的数据同步服务，只不过它现在是一个独立版的服务，可以将其部署到服务器上使用。
