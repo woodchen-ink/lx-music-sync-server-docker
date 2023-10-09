@@ -1,8 +1,11 @@
 # Docker镜像
-完全基于releases的2.0官方压缩包，没有做任何修改。
+完全基于releases官方压缩包，没有做任何修改。
 
 docker hub地址：[woodchen/lxmusicsyncserver:v2.0.0](https://hub.docker.com/r/woodchen/lxmusicsyncserver)
 ```bash
+#2.1.1版本
+docker pull woodchen/lxmusicsyncserver:v2.1.1
+
 #2.0.0版本
 docker pull woodchen/lxmusicsyncserver:v2.0.0
 
