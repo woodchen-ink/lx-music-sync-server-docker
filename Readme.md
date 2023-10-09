@@ -3,6 +3,23 @@
 
 docker hub地址：[woodchen/lxmusicsyncserver:v2.0.0](https://hub.docker.com/r/woodchen/lxmusicsyncserver)
 ```bash
+#一直最新版本
+docker pull woodchen/lxmusicsyncserver
+
+docker run -d \
+  --name lxmusicsyncserver \
+  --restart=always \
+  -p 19527:9527 \ #左边自定义端口
+  -v /volume1/docker/lxmusicsyncserver/logs:/server/logs \ #左边自己的保存目录
+  -v /volume1/docker/lxmusicsyncserver/data:/server/data \ #左边自己的保存目录
+  -e TZ=Asia/Shanghai \
+  -e LX_USER_wood1=wood1 \ # 左边放用户名，右边是密码，可以加多个
+  -e LX_USER_wood=wood \
+  -e BIND_IP=0.0.0.0 \
+  -e PORT=9527 \
+  woodchen/lxmusicsyncserver
+
+
 #2.1.1版本
 docker pull woodchen/lxmusicsyncserver:v2.1.1
 
